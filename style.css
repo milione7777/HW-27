@@ -1,0 +1,72 @@
+* {
+   list-style: none;
+   text-decoration: none;
+   box-sizing: border-box;
+}
+
+li::before {
+     content: "🔶";
+     
+}
+
+li a {
+    margin-left: 10px;
+}
+
+.all {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: gray;
+    height: 651px;
+    width: 400px;
+    margin-left: -360px;
+}
+
+.menu-title {
+
+margin-left: 160px;
+margin-top: 300px;
+writing-mode: vertical-lr;
+font-size: 20px;
+color: #fff;
+}
+
+.menu {
+display: block;
+}
+
+.menu a {
+ color: #fff;
+ font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: 35px;
+letter-spacing: 0.48px;
+}
+
+.btn-menu {
+    margin-top: 100px;
+}
+
+.btn-menu +
+.btn-menu {
+    margin-top: 15px;
+}
+
+.all:hover .menu-title {
+    opacity: 0;
+}
+
+.all:hover {
+   margin-left: 0px;
+   transition: all 2000ms, color;
+}
+
+.menu a:hover {
+    color: yellow;
+    transition: all 0.5s ease;
+} 
+
+
